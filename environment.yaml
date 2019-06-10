@@ -1,0 +1,23 @@
+# 
+# To create the conda environment:
+# $ conda env create -f environment.yaml
+# 
+# To update the conda environment:
+# $ conda env update -f environment.yaml
+# 
+# To register the conda environment in Jupyter:
+# $ conda activate batchspark
+# $ python -m ipykernel install --user --name batchspark
+
+name: batchspark
+dependencies:
+# requires
+- python=3.6.2
+- pandas>=0.24.2
+- numpy>=1.16.4
+- ipykernel>=5.1.1
+- jupyter>=1.0.0
+- pip:
+  - azureml-sdk==1.0.41
+  - azureml-widgets==1.0.41
+  - python-dotenv
